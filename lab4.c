@@ -1,23 +1,16 @@
 #include <stdio.h>
 
-// find BMI
-// m/h^2
-
-int main( void){
-
-    float n ; // ค่าของ M
-    float l ; // ค่าของ H
-
-    printf( "Enter Mass (kg) >>  ");
-    scanf( "%f" , &n );
-
-    printf( "Enter Hight (cm) >> ");
-    scanf( "%f" , &l );
-
-    l = l/100 ;
-
-    float bmi = n/(l*l)  ; // สูตร
-
-    printf( "Mass = %.0f \nHigh = %.0f \nBMI = %.2f" , n , l*100 ,bmi ) ;
-
+void main(void){
+    float area;
+    int base ;
+    int high ;
+    printf("Enter Base:");
+    scanf("%d", &base);
+    printf("Enter High:");
+    scanf("%d", &high);
+    area = 0.5* base*high;
+    //printf("base = %d \n", base);
+    //printf(" high = %d \n",  high);
+    //printf("area = %.2f \n", area);
+    printf("Base = %d \nHigh = %d \nArea = %.3f \n", base, high, area);
 }

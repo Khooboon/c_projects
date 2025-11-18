@@ -13,5 +13,6 @@ void main(void){
         case 'F':printf("Female");
                  break;
         default:printf("Invalid Value");
+        
     }
 }    
